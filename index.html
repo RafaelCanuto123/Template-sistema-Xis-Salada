@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sistema GigaByte-Lanches</title>
+    <meta charset="utf-8"/> 
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/file.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body style="background-image: url(img/giga.jpg)">
+    
+<div class="navbar" id="myNavbar">
+        <a href="index.html" class="active">Home</a>
+        <a href="mesas.html">Mesas</a>
+        <a href="entregas.html">Entregas</a>
+        <a href="login.html">Sair</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+      <div style="padding-left:16px">
+        <div class="container">
+           
+          <h1>Caixa</h1>
+          
+
+          <table class="table table-striped table-bordered" style="border:1px black;">
+            <tr>
+              <th>Item</th>
+              <th>Valor</th>
+              <th>Valor Recebido</th>
+              <th>Troco</th>
+            </tr>
+            <tr>
+              <td><input type="text"class="form-control"></td>
+              <td><input type="text"class="form-control"></td>
+              <td><input type="text"class="form-control"></td>
+              <td><input type="text"class="form-control" disabled></td>
+            </tr>
+          </table>
+          <div align="center">
+          <button class="btn btn-danger">Finalizar Compra</button>
+          <button class="btn btn-primary">Visualizar Compras</button>
+          <button class="glyphicon glyphicon-plus btn btn-default" title="Adicionar Pedido" data-toggle="modal" data-target="#myModal" ></button>
+           <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Pedido:</h4>
+          </div>
+          <div class="modal-body">
+            <select class="form-control">
+              <option>Selecione o tipo do Pedido:</option>
+              <option>Mesas</option>
+              <option>Entregas</option>
+            </select><br/>
+            
+            <div class="col-lg-4">
+            <select class="form-control" >
+               <option>Lanches:</option>
+              <option>Xis-Salada</option>
+            </select>
+          </div>
+            <div class="col-lg-4">
+            <select class="form-control">
+                <option>Bebidas:</option>
+              <option>Coca-Cola 2 Litros</option>
+            </select>
+          </div>
+          <p>Valor total:</p>
+          <label>Valor Recebido</label>
+          <input type="text" class="form-control"></input>
+          <p>Troco:</p>
+            <button class="btn btn-danger">Enviar</button>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+        </div>
+        
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      
+
+</body>
+</html>
